@@ -1,0 +1,543 @@
+<head>
+<link rel="shortcut icon" href="design/title_img.gif"> 
+    <title>Donate Blood</title>
+    
+    <link rel="index" href="./" title="Home" />
+    <link rel="stylesheet" media="screen,projection" type="text/css" href="./css/main.css" />
+    <link rel="stylesheet" media="print" type="text/css" href="./css/print.css" />
+    <link rel="stylesheet" media="aural" type="text/css" href="./css/aural.css" />
+</head>
+
+<body>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-45110407-1', 'jeevaraksha.com');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+<div id="main" class="box">
+
+    <!-- Header -->
+    <div id="header">
+     <h1 id="logo">Blood Bank<span></span></a></h1>
+       
+
+        <!-- Search -->
+        <div id="search" class="noprint">
+        <form action="" method="get">
+        <span id="search-input-out"><input type="text" name="" id="search-input" size="30" /></span></label>
+        <input type="image" src="design/search_submit.gif" id="search-submit" value="OK" />
+        </form>
+        </div> 
+		<!-- /search -->
+
+      </div> <!-- /header -->
+
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+
+ 
+
+		<!-- Main menu (tabs) -->
+               <div id="tabs" class="noprint">
+               <h3 class="noscreen">Navigation</h3>
+               <ul class="box">
+                    <li><a href="index.php">Home<span class="tab-l"></span><span class="tab-r"></span></a></li>
+                    <li><a href="donate_organ.html">Donate Organs<span class="tab-l"></span><span class="tab-r"></span></a></li> 
+                    <li><a href="hospital_registration.html">Hospitals<span class="tab-l"></span><span class="tab-r"></span></a></li>
+					<li><a href="blood_bank.php">Blood Bank<span class="tab-l"></span><span class="tab-r"></span></a></li>
+					<li><a href="need_help.html">Register a patient<span class="tab-l"></span><span class="tab-r"></span></a></li>
+					<li><a href="feedback.php">Feedback<span class="tab-l"></span><span class="tab-r"></span></a></li>
+					<li><a href="about.html">About<span class="tab-l"></span><span class="tab-r"></span></a></li>
+              </ul>
+              <hr class="noscreen" />
+              </div> <!-- /tabs -->
+
+	<!------------------------------------------------------------------------------------------------------------------------>
+			  
+			  
+    <!-- Page (2 columns) -->
+    <div id="page" class="box">
+    <div id="page-in" class="box">
+
+        <!-- Content should be written inside this -->
+        <div id="content">
+		
+		
+		
+		<!---------------------------------------------------------------------------------------------------->
+		
+		<form action="blood_bank_login.php" method="POST">
+        <fieldset>
+		<legend>You can login here</legend>
+<table>
+		<tr><td><b>Username</td>
+		<td><input required placeholder="username" type="text" name="username" style="width:175px; height:20px;"></td>
+		</tr>
+		
+        <tr><td><b>Password&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+		<td><input required placeholder="********" type="password" name="password" style="width:175px; height:20px;">
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="forgot_pw.php">forgot password</a></td>
+		</tr>
+		
+		<tr><td></td><td><input type = "submit" value = "login to update account" name = "login" style="width:175px; height:25px;"></td>
+		</tr>
+		</table>
+		       
+		</fieldset>
+        </form>
+        <br>
+		<!---------------------------------------------------------------------------------------------------->
+		
+		<script language='javascript' type='text/javascript'>
+		function check(input)
+		{
+		if(input.value != document.getElementById('password').value)
+		input.setCustomValidity('Mismatching Passwords ');
+		else
+		input.setCustomValidity('');
+		}
+		
+		function check2(input)
+		{
+		if(input.value != document.getElementById('password1').value)
+		input.setCustomValidity('Mismatching Passwords ');
+		else
+		input.setCustomValidity('');
+		}
+
+
+function checkIt(el) 
+{
+var elArr = ['college'];
+for (var i=0; i<elArr.length; i++) 
+{
+sel = document.getElementById(elArr[i]);
+if (el.value == elArr[i]) { sel.style.display = 'block'; }
+                     else { sel.style.display = 'none'; } 
+}
+}
+
+
+function generateRow() 
+{
+var d=document.getElementById("div");
+d.innerHTML+="<input placeholder='Branch 9'  type='text' name='branch_9'  style='width:200px;'/><input placeholder='Branch 10'  type='text' name='branch_10'  style='width:200px;'/><input placeholder='Branch 11'  type='text' name='branch_11'  style='width:200px;'/><input placeholder='Branch 12'  type='text' name='branch_12'  style='width:200px;'/><input placeholder='Branch 13'  type='text' name='branch_13'  style='width:200px;'/>";
+}
+		
+	</script>
+		
+		
+        <form action="donate_blood.php" method="POST">
+        <fieldset>
+		<legend>Register here to be a blood donor</legend>
+        
+		
+		
+		
+		
+<font color="blue">Fields marked with the symbol <font color="red" size="4"><b> * </font></b> 
+cannot be edited, once registered. </font>
+<font color="red"><br> Note : Donors should have a minimum weight of about 50kg</font>
+		
+		<table>
+		<tr>
+		<td><b>Name</td> 
+		<td><input required maxlength=30 placeholder="Enter Your Name" type="text" name="name" style="width:200px; height:20px;"></td>
+		</tr>
+
+		
+        <tr>
+		<td><b>Contact No &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+		<td><input required maxlength=13 type="text" name="contact_no" placeholder="9447020535" style="width:200px; height:20px;"></td>
+		</tr>
+		
+        <tr>
+		<td><b>Blood Group</td> 
+		<td><select name="blood_group">
+		<option>Blood Group</option>
+		<option>O positive</option>
+		<option>O negative</option>
+		<option>A positive</option>
+		<option>A negative</option>
+		<option>B positive</option>
+		<option>B negative</option>
+	    <option>AB positive</option>
+        <option>AB negative</option>
+        </select><font color="red" size="4"><b> * </font></b></td>
+		</tr>
+		
+        <tr>
+		<td><b>Gender</b></td> 
+		<td><select name="gender" >
+		<option>Male</option>
+		<option>Female</option>
+        </select><font color="red" size="4"><b> * </font></td>
+		</tr>
+		
+		<tr>
+		<td><b>Date of birth</b></td>
+		<td><select name="dob_day">
+<option>Day</option>
+<option>01</option><option>02</option><option>03</option><option>04</option><option>05</option>
+<option>06</option><option>07</option><option>08</option><option>09</option><option>10</option>
+<option>11</option><option>12</option><option>13</option><option>14</option><option>15</option>
+<option>16</option><option>17</option><option>18</option><option>19</option><option>20</option>
+<option>21</option><option>22</option><option>23</option><option>24</option><option>25</option>
+<option>26</option><option>27</option><option>28</option><option>29</option><option>30</option>
+<option>31</option>
+</select>
+
+		<select name="dob_month">
+<option>Month</option>
+<option>January</option>
+<option>February</option>
+<option>March</option>
+<option>April</option>
+<option>May</option>
+<option>June</option>
+<option>July</option>
+<option>August</option>
+<option>September</option>
+<option>October</option>
+<option>November</option>
+<option>December</option>
+</select>
+
+		<select name="dob_year">
+<option>Year</option>
+
+<option>1950</option><option>1951</option><option>1952</option><option>1953</option><option>1954</option>
+<option>1955</option><option>1956</option><option>1957</option><option>1958</option><option>1959</option>
+<option>1960</option><option>1961</option><option>1962</option><option>1963</option><option>1964</option>
+<option>1965</option><option>1966</option><option>1967</option><option>1968</option><option>1969</option>
+<option>1970</option><option>1971</option><option>1972</option><option>1973</option><option>1974</option>
+<option>1975</option><option>1976</option><option>1977</option><option>1978</option><option>1979</option>
+<option>1980</option><option>1981</option><option>1982</option><option>1983</option><option>1984</option>
+<option>1985</option><option>1986</option><option>1987</option><option>1988</option><option>1989</option>
+<option>1990</option><option>1991</option><option>1992</option><option>1993</option><option>1994</option>
+<option>1995</option><option>1996</option><option>1997</option><option>1998</option><option>1999</option>
+<option>2000</option><option>2001</option><option>2002</option><option>2003</option><option>2004</option>
+<option>2005</option><option>2006</option><option>2007</option><option>2008</option><option>2009</option>
+<option>2010</option><option>2011</option><option>2012</option><option>2013</option><option>2014</option>
+
+</select><font color="red" size="4"><b> * </font></td>
+</tr>
+</table>
+
+
+<font color="blue">Names of people who have donated blood within the past 3 months can continue with the 
+registration, but their names will be displayed only after completion of a period of 3 months.</font>
+
+<table>	
+<tr>
+<td><b>Last donation on</td>
+<td><select name="last_month_donated">
+<option>Not yet donated </option>
+<option>January</option>
+<option>February</option>
+<option>March</option>
+<option>April</option>
+<option>May</option>
+<option>June</option>
+<option>July</option>
+<option>August</option>
+<option>September</option>
+<option>October</option>
+<option>November</option>
+<option>December</option>
+</select>
+
+
+&nbsp;<b>Year <select name="last_donated_year">
+<option>this year</option>
+<option>previous year</option>
+<option>before 1 year</option>
+</select>
+</td></tr>
+
+<tr>
+<td><b>Choose a username</td>
+<td><input required placeholder="don't use space in username" maxlength=30 type="text" name="username" style="width:200px; height:20px; "/> </td>
+</tr>		
+		
+<tr>
+<td><b>Password</td>
+<td><input placeholder="min 6 characters" required type="password" id="password" name="password" style="width:200px; height:20px;"/></td>
+</tr>		
+		
+<tr>
+<td><b>Re-enter password</td>
+<td><input required placeholder="******" type="password" id="passwordconf" name="re_password" style="width:200px; height:20px;" oninput="check(this)"/></td>
+</tr>		
+		
+<tr>
+<td><b>Specify State</td>
+<td><input required readonly type="text" name="state" value="Kerala" style="width:200px; height:20px;"/></td>
+</tr>
+	
+
+<tr>
+<td><b>Specify District </td>
+<td><select name="district" style="width:200px; height :20px"/>
+		<option>Alappuzha</option>
+		<option>Ernakulam</option>
+		<option>Idukki</option>
+		<option>Kannur</option>
+		<option>Kasaragod</option>
+		<option>Kollam</option>
+		<option>Kottayam</option>
+		<option>Kozhikode</option>
+		<option>Malappuram</option>
+		<option>Palakkad</option>
+		<option>Pathanamthitta</option>
+		<option>Thrissur</option>
+		<option>Trivandrum</option>
+		<option>Wayanad</option>
+		</select></td>
+</tr>
+		
+<tr>
+<td><b>Specify City </td>
+<td><input required placeholder="City" type="text" name="city" style="height:20px; width:200px;"/></td>
+<tr> </table>
+
+<br> <font color="blue"> Please make sure that you update your last day of blood donation. 
+		<br>Updates can be made only after logging into your account.</font><br>
+
+		<br>
+		
+&nbsp;&nbsp;<input required type="checkbox" name="aggrement">&nbsp;&nbsp;<font color="ORANGE">
+		I confirm that the details given by me are correct. <br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I am willing to donate blood free of cost without any consideration. 
+		<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I am willing and ready to donate blood to any person without reference 
+		<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;to race, caste, sex, creed or color.
+		</font>
+		
+<table>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td>
+<input type = "submit" value = "Be a Blood Donor" name = "individual_submit" style="width:200px; height:30px;"/></td>
+</tr>
+</table>
+
+</form>
+
+</fieldset>
+        
+    
+<!------------------------------------------------------------------------------------->
+<br>
+
+
+<fieldset><legend> Organisation Registration </legend>
+
+<form action ="donate_blood.php" method="POST">
+
+<table>
+
+<tr>
+<td><b>Organisation Name </td>
+<td><input placeholder="Name of Organisation" required type="text" name="organisation_name" style="width:200;"/></td>
+</tr>
+
+<tr>
+<td><b>Specify State</td>
+<td><input required readonly type="text" name="state" value="Kerala" style="width:200;"/></td>
+</tr>		
+	
+<tr>
+<td><b>Specify District </td>
+<td><select name="district" style="width:200;"/>
+		<option>All Kerala</option>
+		<option>Alappuzha</option>
+		<option>Ernakulam</option>
+		<option>Idukki</option>
+		<option>Kannur</option>
+		<option>Kasaragod</option>
+		<option>Kollam</option>
+		<option>Kottayam</option>
+		<option>Kozhikode</option>
+		<option>Malappuram</option>
+		<option>Palakkad</option>
+		<option>Pathanamthitta</option>
+		<option>Thrissur</option>
+		<option>Trivandrum</option>
+		<option>Wayanad</option>
+		</select></td>
+</tr>
+		
+<tr>
+<td><b>Specify City</td> 
+<td><input required placeholder="City" type="text" name="city" style="width:200px;"/></td>
+</tr>
+
+<tr>
+<td><b>Person in charge</td>
+<td><input required placeholder="person in charge" type="text" name="incharge" style="width:200px;"/></td>
+</tr>
+
+<td>
+<br><b><font color="blue">Atleast one contact no is must.</font>
+</td>
+
+<tr>
+<td><b>Contact no. 1 </td>
+<td><input required placeholder="9447020535" type="text" name="contact_no_1" style="width:200px;"/></td>
+</tr>
+
+<tr>
+<td><b>Contact no. 2 </td>
+<td><input type="text" placeholder="not mandatory" name="contact_no_2" style="width:200px;" /></td>
+</tr>
+
+<tr>
+<td><b>Contact no. 3 </td>
+<td><input type="text" placeholder="not mandatory" name="contact_no_3" style="width:200px;" /></td>
+</tr>
+
+<tr>
+<td><br><b>Login name</td> 
+<td><br><input required placeholder="don't use space in between" type="text" name="username" style="width:200px;"/></td>
+</tr>
+
+<tr>
+<td><b>password</td>
+<td><input required placeholder="min 6 characters" type="password" name="password1" id="password1" style="width:200px;" /></td>
+</tr>
+
+<tr>
+<td><b>Re enter Password</td> 
+<td><input required placeholder="******" type="password" name="password2" id="passwordconf" style="width:200px;" oninput="check2(this)"/></td>
+</tr>
+
+<tr>
+<td><br><b>Is this a 24 hours <br>avaliable organisation?</td> 
+<td><br>
+<input required type="radio" name="all_round_clock" value="no"><b>No , Specify time then<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>
+From <select name="from">
+<option>00</option><option>01</option><option>02</option><option>03</option>
+<option>04</option><option>05</option><option>06</option><option>07</option>
+<option>08</option><option>09</option><option>10</option><option>11</option>
+<option>12</option><option>13</option><option>14</option><option>15</option>
+<option>16</option><option>17</option><option>18</option><option>19</option>
+<option>20</option><option>21</option><option>22</option><option>23</option>
+</select>
+<b>To <select name="to">
+<option>00</option><option>01</option><option>02</option><option>03</option>
+<option>04</option><option>05</option><option>06</option><option>07</option>
+<option>08</option><option>09</option><option>10</option><option>11</option>
+<option>12</option><option>13</option><option>14</option><option>15</option>
+<option>16</option><option>17</option><option>18</option><option>19</option>
+<option>20</option><option>21</option><option>22</option><option>23</option>
+</select>Hours
+</td></tr>
+
+<tr><td></td>
+<td><input required type="radio" name="all_round_clock" value="yes"> <b> Yes, this is a 24 hours <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;available organisation </td></tr>
+
+
+
+<tr><td></td></tr>
+<tr><td><b>Organisation Type</td><td>
+<input required type="radio" name="organisation_type" value="association" onclick="checkIt(this)"><b>Association
+<input required type="radio" name="organisation_type" value="college" onclick="checkIt(this)"><b>College
+</td></tr>
+
+<tr>
+<td></td><td>
+<div id="association" style="display:none;width:150px" />
+ <input type="text" id="single" size="25" />
+</div>
+<div id="college" style="display:none;width:150px" />
+<br><b>Enter college branches
+<input placeholder="eg. Mechanical/MBBS/B.Arch" type="text" name="branch_1"  style="width:200px;"/>
+<input placeholder="Branch 2" type="text" name="branch_2"  style="width:200px;"/>
+<input placeholder="Branch 3" type="text" name="branch_3"  style="width:200px;"/>
+<input placeholder="Branch 4" type="text" name="branch_4"  style="width:200px;"/>
+<input placeholder="Branch 5" type="text" name="branch_5" style="width:200px;"/>
+<input placeholder="Branch 6" type="text" name="branch_6" style="width:200px;" />
+<input placeholder="Branch 7" type="text" name="branch_7"  style="width:200px;"/>
+<input placeholder="Branch 8" type="text" name="branch_8"  style="width:200px;"/>
+<div id="div"></div>
+<input type="button" value="Add more branches"  style="width:200px;" onclick="generateRow()"/>
+<br><br> Enter No of semesters
+ <select name="no_of_semesters"  style="width:200px;" />
+ <option>1</option>
+ <option>2</option>
+ <option>3</option>
+ <option>4</option>
+ <option>5</option>
+ <option>6</option>
+ <option>7</option>
+ <option>8</option>
+ <option>9</option>
+ <option>10</option>
+ <option>11</option>
+ <option>12</option>
+ </select>
+ 
+</div></td></tr>
+
+<tr><td></td></tr>
+<tr>
+<td></td><td><br> <input type="submit" value="Register" name="organisation_submit" style="width:200px; height:30;"/></td>
+</tr>
+
+</table>
+</form>
+
+
+</fieldset>
+
+
+    
+		</div> 
+		<!-- /content -->
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<!-- Side Pic -->
+        <div id="about-me">
+        <p>&nbsp;&nbsp;&nbsp;<img src="design/donate_blood.jpg" height="142" width="192" />
+        </div> 
+	    <!-- /Side Pic -->
+
+        
+    </div> <!-- /page-in -->
+    </div> <!-- /page -->
+
+	
+	
+	
+	<!------------------------------------------------------------------------------------------------------------------------>
+	
+	
+    <!-- Footer -->
+    <div id="footer">
+    <p id="createdby">Product of <a href="http://www.newdimensions.in">New Dimensions</a> </p>
+    <p id="copyright"><font size="1">&copy; 2013 Developed by Aravind R Pillai ,Asif Jaleel (For best result use Google Chrome)</font></p>
+    </div> 
+	<!-- /footer -->
+
+	
+</div> <!-- /main -->
+
+</body>
+</html>

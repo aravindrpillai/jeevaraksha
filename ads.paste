@@ -1,0 +1,16 @@
+
+<!-----Space for ads----------------------------------------------------------------------------->
+
+
+<style> 
+ad_1  {  position:absolute;  left:55px;    top:245px;  }  
+ad_2  {  position:absolute;  left:1120px;  top:245px;  }  
+</style>
+
+
+<ad_1><img border="2" src="img.jpg" width="150" height="150" /> </ad_1>
+<ad_2><img border="2" src="img.jpg" width="150" height="150" /> </ad_2>
+
+
+<!----------------------------------------------------------------------------------------------------->
+
